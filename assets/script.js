@@ -60,9 +60,15 @@ function createScheduler() {
     }
 }
 
+// Show the current date and time on the page
+function showDateAndTime() {
+  $("#currentDay").text(moment().format("dddd, MMMM Do, h:mm a"));
+}
+
 // On first page load, create the scheduler
 function init() {
     createScheduler();
+    showDateAndTime();
 }
 
 // Add an eventListener to catch all clicks that may be on buttons
