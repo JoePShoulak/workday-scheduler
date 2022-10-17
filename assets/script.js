@@ -2,8 +2,8 @@
 function getColorFromTime(time) {
     var currentTime = moment().format("H"); // get the time from moment.js
 
-    if (time < currentTime) { return "#ff0000"; } // if past, red
-    else if (time > currentTime) { return "#00ff00"; } // if future, green
+    if (time < currentTime) return "#ff0000"; // if past, red
+    if (time > currentTime) return "#00ff00"; // if future, green
     
     return "#888888"; // default (present), gray
 }
